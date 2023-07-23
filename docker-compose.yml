@@ -1,8 +1,10 @@
 services:
   date:
+    image: trekusovmax/result-date
     build:
       dockerfile: date.dockerfile
   result:
+    image: trekusovmax/result
     build: .
     ports:
       - '3000:3000'
